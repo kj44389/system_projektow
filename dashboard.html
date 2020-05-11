@@ -1,0 +1,108 @@
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style/style.min.css" />
+    <meta http-equiv="default-style" content="default stylesheet title" />
+    <!-- Defines a time interval in seconds for the document to refresh itself -->
+    <meta http-equiv="refresh" content="300" />
+    <!-- Specify a legacy document mode that Internet Explorer should use to display a webpage -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Alternative form of setting the charset attribute. A document must not contain both a meta element with an http-equiv attribute in the encoding declaration state and a meta element with the charset attribute present. -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- Control the behavior of search engine crawling and indexing. -->
+    <meta name="http-equiv" content="X-Robots-Tag : noindex, follow" />
+    <!-- The name of the Web application that the page represents -->
+    <meta name="application-name" content="OnePage" />
+    <!-- Name of the author of the document -->
+    <meta name="author" content="21st Century Code" />
+    <!-- Specifies the software package used to generate the document -->
+    <meta name="generator" content="SomeWebPageGenerator 4.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500|Nunito:200,300,400,600,700|Roboto:300,400,500,700,900|Merriweather:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans|Roboto:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Login Page</title>
+  </head>
+  <body onLoad="setup()">
+    <div id="wrapper">
+      <header class="nav">
+        <div class="nav_logo">
+          <div class="nav-profile-img"><p>FIRM LOGO</p></div>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-home"></i> DASHBOARD</a>
+            </li>
+            <li><a href="#">OTHER</a></li>
+          </ul>
+        </div>
+      </header>
+      <article class="content">
+        <div class="content_header">
+          <p class="content_header_text">DASHBOARD / AKTUALNE PROJEKTY</p>
+        </div>
+        <div class="content_body">
+          <div class="projects_list">
+            <div class="project_list_header">
+              <div class="project_index"><p>Project Index</p></div>
+              <div class="project_name"><p>Name</p></div>
+              <div class="project_deadline"><p>Deadline</p></div>
+              <div class="project_programmers"><p>Programmers</p></div>
+              <div class="project_role"><p>Role</p></div>
+              <div class="project_expand"><p>Expand</p></div>
+            </div>
+            <div class="project_list_item">
+              <div class="item_index"><p>2221</p></div>
+              <div class="item_name"><p>Projekt1</p></div>
+              <div class="item_deadline"><p>22 - 10 - 2019</p></div>
+              <div class="item_programmers"><p>End Project</p></div>
+              <div class="item_role"><p>Pracownik</p></div>
+              <div class="item_expand">
+                <p>
+                  <span class="expand_button"
+                    ><i class="fas fa-angle-down"></i
+                  ></span>
+                </p>
+              </div>
+            </div>
+            <div class="project_list_item">
+              <div class="item_index"><p>4152</p></div>
+              <div class="item_name"><p>Projekt2</p></div>
+              <div class="item_deadline"><p>22 - 10 - 2019</p></div>
+              <div class="item_programmers"><p>End Project</p></div>
+              <div class="item_role"><p>-</p></div>
+              <div class="item_expand">
+                <p>
+                  <span class="expand_button"
+                    ><i class="fas fa-angle-down"></i
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

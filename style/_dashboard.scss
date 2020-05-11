@@ -1,0 +1,192 @@
+// main: style.scss
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: var(--white);
+
+  .nav_logo {
+    width: 100%;
+    height: 50px;
+    @extend .display-flex;
+    flex-flow: column !important;
+    .nav-profile-img {
+      width: 100%;
+      height: 100%;
+      border-bottom: 1px solid var(--grey);
+      @extend .display-flex;
+      p {
+        font-size: 3em;
+      }
+    }
+  }
+  .nav-list {
+    width: 100%;
+    height: calc(100% - 200px);
+    @extend .display-flex;
+    align-items: flex-start !important;
+
+    ul {
+      list-style: none;
+      text-align: center;
+      width: 100%;
+      margin-top: 15px;
+      li {
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        margin: 1px auto 0 auto;
+        border-left: 5px solid var(--green);
+        @extend .display-flex;
+        a {
+          color: var(--green);
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        &:hover {
+          background-color: var(--green);
+          color: var(--white);
+          a {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  width: calc(100vw - 200px);
+  margin-left: 200px;
+  height: 100vh;
+  background-color: var(--light_grey);
+  .content_header {
+    width: 100%;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid var(--grey);
+    @extend .display-flex;
+    justify-content: flex-start !important;
+    .content_header_text {
+      font-size: 2.5em;
+      font-family: "Roboto";
+      font-weight: 300;
+      margin-left: 60px;
+      color: var(--green);
+      position: relative;
+      &:before {
+        content: "/";
+        position: absolute;
+        left: -20px;
+        top: 0;
+      }
+    }
+  }
+  .content_body {
+    width: 100%;
+    height: 800px;
+    padding: 15px;
+    font-size: 2.5em;
+    font-family: "Open Sans";
+
+    .projects_list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .project_list_header {
+        width: 100%;
+        height: 50px;
+        @extend .display-flex;
+        flex-direction: row;
+        border-bottom: 1px solid var(--green);
+        background-color: var(--white);
+
+        .project_index {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .project_name {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .project_deadline {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .project_programmers {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .project_role {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .project_expand {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+      }
+      .project_list_item {
+        width: 100%;
+        height: 50px;
+        @extend .display-flex;
+        flex-direction: row;
+        border-bottom: 1px solid var(--grey);
+
+        .item_index {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .item_name {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .item_deadline {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .item_programmers {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .item_role {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+        }
+        .item_expand {
+          width: calc(100% / 6);
+          height: 100%;
+          @extend .display-flex;
+          .expand_button {
+            width: 25px;
+            height: 25px;
+            background-color: var(--green);
+            @extend .display-flex;
+            i {
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
+}
