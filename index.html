@@ -1,13 +1,3 @@
-<!--
-1. logownaie. x
-2. baza danych. x
-3. Dodawanie zadań. x
-4. Dodawanie projektów. x
-5. Podgłąd projektów / zadań. x
-6. Przydzielanie użytkowników do zadań / projektów.
-7.
-8.
- -->
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
@@ -29,13 +19,9 @@
     <meta name="generator" content="SomeWebPageGenerator 4.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="height=device-height, initial-scale=1.0" />
-
+    <script src="./scripts/login_page.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:400,500|Nunito:200,300,400,600,700|Roboto:300,400,500,700,900|Merriweather:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans|Roboto:100,300,400,500,700,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -50,33 +36,55 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./scripts/dashboard.js"></script>
 
-    <title>Dashboard</title>
+    <title>Login Page</title>
   </head>
-  <body>
+  <body onLoad="setup()">
     <div id="wrapper">
-      <header class="nav">
-        <div class="nav_logo">
-          <div class="nav-profile-img"><p>FIRM LOGO</p></div>
-        </div>
-        <div class="nav-list">
-          <ul>
-            <li>
-              <a href="#"><i class="fas fa-home"></i> STRONA GŁÓWNA</a>
-            </li>
-            <li id="nav_list_projects"><a href="#">PROJEKTY</a></li>
-          </ul>
-        </div>
-      </header>
-      <article class="content">
-        <div class="top_header">
-          <p class="top_header_user_name"></p>
-        </div>
-        <div class="content_header">
-          <p class="content_header_text">STRONA GŁÓWNA</p>
-          <p class="content_header_text">AKTUALNE PROJEKTY</p>
-        </div>
+      <article class="login-shape">
+        <section class="image-section">
+          <h3>
+            Najlepsze rozwiązanie dla <br />
+            pracujących programistów!
+          </h3>
+        </section>
+        <section class="login-section">
+          <form>
+            <h2>LOGOWANIE</h2>
+            <span class="wrap-input">
+              <input
+                placeholder=" "
+                class="input100"
+                id="input100-login"
+                type="text"
+              />
+              <span class="focus-input100"></span>
+              <span class="label-border"></span>
+              <span class="wrap-label" id="wrap-label-login">
+                LOGIN
+              </span>
+            </span>
+            <span class="wrap-input">
+              <input
+                placeholder=" "
+                class="input100"
+                id="input100-pass"
+                type="password"
+              />
+              <span class="focus-input100"></span>
+              <span class="label-border"></span>
+              <span class="wrap-label" id="wrap-label-pass">
+                HASŁO
+              </span>
+            </span>
+            <input
+              type="button"
+              onClick="CheckUser()"
+              id="form-submit"
+              value="ZALOGUJ"
+            />
+          </form>
+        </section>
       </article>
     </div>
   </body>
