@@ -1,6 +1,7 @@
 <?php
 
-$data = json_decode($_POST['data']);
+$json = file_get_contents('php://input');
+$data = json_decode($json);
 $con = mysqli_connect('localhost','root','','projekt');
 if (!$con) {
   die('Could not connect: ' . mysqli_error($con));

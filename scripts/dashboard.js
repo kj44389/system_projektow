@@ -1,22 +1,8 @@
+import { createCookie, eraseCookie, readCookie } from './cookies.js'
+
 //////////////////////// functions
 ///////// OTHERS
-//create cookie
-function createCookie(name, value, days) {
-  var expires;
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-    expires = "; expires=" + date.toGMTString();
-  } else {
-    expires = "";
-  }
-  document.cookie = name + "=" + value + expires + "; path=/";
-}
-//get cookie value
-function readCookie(name) {
-  var keyValue = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
-  return keyValue ? keyValue[2] : null;
-}
+
 //get parent node
 function getParentNode(evnt) {
   let node = evnt.parent().parent().parent(); // go up im dom structure to project_list_item class so we can add structure after it
@@ -592,7 +578,7 @@ function add_actual_projects() {
   $(document).ready(function () {
     $(".top_header_user_name").text(
       //add personal info on topbar
-      readCookie("imie") + " " + readCookie("nazwisko") //get info from cookies
+      readCookie("imie") + " " + readCookie("nazwisko") 
     );
   }); // info to top bar
   $(document).on("click", ".expand_button", dropitem);

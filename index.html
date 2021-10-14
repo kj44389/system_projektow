@@ -1,91 +1,58 @@
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="./style/style.min.css" />
-    <meta http-equiv="default-style" content="default stylesheet title" />
-    <!-- Defines a time interval in seconds for the document to refresh itself -->
-    <meta http-equiv="refresh" content="300" />
-    <!-- Specify a legacy document mode that Internet Explorer should use to display a webpage -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Alternative form of setting the charset attribute. A document must not contain both a meta element with an http-equiv attribute in the encoding declaration state and a meta element with the charset attribute present. -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <!-- Control the behavior of search engine crawling and indexing. -->
-    <meta name="http-equiv" content="X-Robots-Tag : noindex, follow" />
-    <!-- The name of the Web application that the page represents -->
-    <meta name="application-name" content="OnePage" />
-    <!-- Name of the author of the document -->
-    <meta name="author" content="21st Century Code" />
-    <!-- Specifies the software package used to generate the document -->
-    <meta name="generator" content="SomeWebPageGenerator 4.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
-    <script src="./scripts/login_page.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,500|Nunito:200,300,400,600,700|Roboto:300,400,500,700,900|Merriweather:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <title>Login Page</title>
-  </head>
-  <body onLoad="setup()">
-    <div id="wrapper">
-      <article class="login-shape">
-        <section class="image-section">
-          <h3>
-            Najlepsze rozwiązanie dla <br />
-            pracujących programistów!
-          </h3>
-        </section>
-        <section class="login-section">
-          <form>
-            <h2>LOGOWANIE</h2>
-            <span class="wrap-input">
-              <input
-                placeholder=" "
-                class="input100"
-                id="input100-login"
-                type="text"
-              />
-              <span class="focus-input100"></span>
-              <span class="label-border"></span>
-              <span class="wrap-label" id="wrap-label-login">
-                LOGIN
-              </span>
-            </span>
-            <span class="wrap-input">
-              <input
-                placeholder=" "
-                class="input100"
-                id="input100-pass"
-                type="password"
-              />
-              <span class="focus-input100"></span>
-              <span class="label-border"></span>
-              <span class="wrap-label" id="wrap-label-pass">
-                HASŁO
-              </span>
-            </span>
-            <input
-              type="button"
-              onClick="CheckUser()"
-              id="form-submit"
-              value="ZALOGUJ"
-            />
-          </form>
-        </section>
-      </article>
-    </div>
-  </body>
-</html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="300" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="height=device-height, initial-scale=1.0" />
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Nunito:200,300,400,600,700|Roboto:300,400,500,700,900|Merriweather:300,400,700"
+			rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+			integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="./style/style.min.css" />
+		<title>Login Page</title>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<article class="login-shape">
+				<section class="image-section">
+					<h3>
+						Najlepsze rozwiązanie dla <br />
+						pracujących programistów!
+					</h3>
+				</section>
+				<section class="login-section">
+					<form>
+						<h2>LOGOWANIE</h2>
+						<span class="wrap-input">
+							<input placeholder=" " class="input100" id="input100-login" type="text" />
+							<span class="focus-input100"></span>
+							<span class="label-border"></span>
+							<span class="wrap-label" id="wrap-label-login">
+								LOGIN
+							</span>
+						</span>
+						<span class="wrap-input">
+							<input placeholder=" " class="input100" id="input100-pass" type="password" />
+							<span class="focus-input100"></span>
+							<span class="label-border"></span>
+							<span class="wrap-label" id="wrap-label-pass">
+								HASŁO
+							</span>
+						</span>
+						<input type="button" id="form-submit" value="ZALOGUJ" />
+					</form>
+				</section>
+			</article>
+		</div>
+		<script type='module' src="./scripts/login_page.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+		<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+	</body>
+	
+	</html>
